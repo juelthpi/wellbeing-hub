@@ -5,6 +5,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   background-color: #fff;
+  color: #111827;
 }
 .container-fluid {
   max-width: 1680px;
@@ -55,7 +56,9 @@ p {
 input {
   outline: none;
 }
-
+a {
+  color: #111827;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -76,6 +79,9 @@ h6 {
   color: #fff;
   padding: 0;
   font-weight: 700;
+}
+.mt-95 {
+  margin-top: 90px;
 }
 .primary-btn,
 .secondary-btn {
@@ -137,6 +143,14 @@ h6 {
 }
 .text-primary {
   color: #111827 !important;
+}
+.text-secondary {
+  color: #691fd6 !important;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
 }
 .common-heading-section h3 {
   font-size: 58px;
@@ -267,4 +281,202 @@ a.nav-link.dropdown-toggle i {
   background-position: center center;
   padding-top: 86px;
   padding-bottom: 72px;
+}
+/* footer css */
+.footer-logo img {
+  max-width: 286px;
+}
+.footer-description {
+  max-width: 405px;
+
+  padding: 44px 50px;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+.footer-description p {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #111827;
+}
+.widget-title {
+  color: #691fd6;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.widget-nav-item li a {
+  color: #111827;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.widget-nav-item li a:hover {
+  color: #681fd6a4;
+}
+.widget-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact-info li a {
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 6px;
+}
+.contact-info li h6 {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact-info li h6 i {
+  font-size: 18px;
+}
+.g-12 {
+  gap: 12px;
+}
+.footer-section {
+  background: #e6f4fe;
+  padding: 96px 0;
+}
+.social-menu {
+  gap: 20px;
+}
+.social-menu li a {
+  border: 1.5px solid #691fd6;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  justify-content: center;
+}
+.social-menu li a i {
+  font-size: 18px;
+  color: #691fd6;
+}
+.social-menu li a:hover {
+  background-color: #681fd680;
+}
+.social-menu li a:hover i {
+  color: #fff;
+}
+.footer-bottom p,
+.terms-list li a {
+  font-size: 16px;
+  transition: 0.5s;
+}
+.terms-list li a:hover {
+  color: #681fd6a4;
+}
+.terms-list {
+  gap: 40px;
+}
+.g-40 {
+  gap: 40px;
+}
+.g-20 {
+  gap: 20px;
+}
+.footer-bottom {
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #9ca3af;
+}
+/* service css */
+.service-card-content {
+  position: absolute;
+  bottom: 0px;
+  padding: 36px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.service-card-icon {
+  position: absolute;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #07d8ff;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  top: 0;
+  right: 0;
+}
+
+.service-card:hover .service-card-icon {
+  background-color: #691fd6;
+}
+.service-card-content h4 {
+  color: #f8fafc;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.service-card-content p {
+  color: #f8fafc;
+  font-size: 20px;
+  margin-top: 24px;
+  line-height: 26px;
+}
+.service-area {
+  margin-top: 60px;
+}
+.slick-dots li button {
+  background-color: #9ca3af;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  opacity: 0;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 0;
+}
+.slick-dots li.slick-active button {
+  background-color: #07d8ff;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  z-index: 999;
+  border-radius: 50%;
+}
+/* Force slick-track to behave like flex container */
+.slick-track {
+  display: flex !important;
+  gap: 35px; /* Adjust this value for your desired spacing */
+}
+
+/* Remove default margin from slick-slide */
+.slick-slide {
+  margin: 0 !important;
+}
+
+.slick-dots li.slick-active {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  padding: 0;
+  cursor: pointer;
+  background: #83ebff;
+  box-shadow: rgba(26, 173, 207, 1) 0px 22px 70px 4px;
+  padding-left: 5px;
+  padding-top: 5px;
+  border-radius: 50%;
+}
+.slick-dots {
+  bottom: -60px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 60px;
 }

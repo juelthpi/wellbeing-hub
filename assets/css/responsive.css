@@ -47,6 +47,15 @@
     margin-top: 40px;
     margin-bottom: 20px;
   }
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer-description {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 991px) {
   p {
@@ -61,6 +70,10 @@
     font-size: 45px;
     line-height: 50px;
   }
+  .footer-bottom p {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .common-heading-section h1 {
@@ -74,6 +87,27 @@
   .common-heading-section span {
     font-size: 18px;
     line-height: 20px;
+  }
+  .terms-list {
+    width: 100%;
+    justify-content: center;
+  }
+  .social-menu {
+    width: 100%;
+  }
+  .slick-track {
+    gap: 0px;
+  }
+  .service-card-content p {
+    font-size: 16px;
+    margin-top: 18px;
+    line-height: 25px;
+  }
+  .service-card-content h4 {
+    font-size: 22px;
+  }
+  .service-card-content {
+    padding: 20px;
   }
 }
 @media screen and (max-width: 480px) {
