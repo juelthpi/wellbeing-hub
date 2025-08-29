@@ -14,11 +14,17 @@
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
    <link rel="stylesheet" type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+   <link rel="stylesheet" href="assets/css/loader.css" />
    <link rel="stylesheet" href="assets/css/main.css" />
    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
 <body>
+   <div id="preloader">
+      <div id="status">
+         <img src="assets/images/favicon.png" alt="logo" />
+      </div>
+   </div>
    <!-- Header Start-->
    <header class="header-area">
       <div class="container-fluid">
@@ -670,6 +676,13 @@
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
    <script src="assets/js/main.js"></script>
+   <script>
+      $(window).on("load", function () {
+         $("#preloader").fadeOut();
+         $("#preloader").delay(500).fadeOut("slow");
+         $("body").delay(500).css({ opacity: 1 });
+      });
+   </script>
 </body>
 
 </html>
