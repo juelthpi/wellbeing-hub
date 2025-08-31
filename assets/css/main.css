@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   background-color: #fff;
   color: #111827;
+  overflow-x: hidden;
 }
 .container-fluid {
   max-width: 1680px;
@@ -906,9 +907,8 @@ a.nav-link.dropdown-toggle i {
 .vision-text-box {
   bottom: 46px;
   position: absolute;
-  right: 0;
-  max-width: 1120px;
-  width: 100%;
+  right: 20px;
+  width: 78%;
   padding: 48px;
   box-sizing: border-box;
   border-radius: 24px;
