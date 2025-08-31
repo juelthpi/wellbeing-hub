@@ -188,6 +188,32 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+  // news-slider
+  $(".lates-news-slider ").slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    autoplay: false,
+    autoplaySpeed: 1,
+    cssEase: "linear", // Smooth easing (no acceleration)
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });
 
 // slider height

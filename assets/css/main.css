@@ -1189,3 +1189,31 @@ select {
   margin-bottom: 4px;
   letter-spacing: -0.56px;
 }
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #2a282f;
+  border-radius: 4px;
+}
+.lates-news-card h4 {
+  margin-top: 16px;
+  color: #2a282f;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.96px;
+  font-weight: 600;
+}
+.lates-news-card {
+  background-color: #e6f4fe;
+  border-radius: 12px;
+  padding: 24px 16px;
+}
+.lates-news-card p {
+  margin-top: 16px;
+  color: #625f68;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.64px;
+}
