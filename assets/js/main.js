@@ -1,11 +1,11 @@
 jQuery(document).ready(function ($) {
-  $(document).on("click", function (event) {
-    const $div = $("#outside-click");
-    const $navbarText = $("#navbarText");
-    if (!$div.is(event.target) && $div.has(event.target).length === 0) {
-      $navbarText.removeClass("show");
-    }
-  });
+  // $(document).on("click", function (event) {
+  //   const $div = $("#outside-click");
+  //   const $navbarText = $("#navbarText");
+  //   if (!$div.is(event.target) && $div.has(event.target).length === 0) {
+  //     $navbarText.removeClass("show");
+  //   }
+  // });
   // service slider
   $(".service-slider").slick({
     dots: true,
@@ -14,9 +14,23 @@ jQuery(document).ready(function ($) {
     speed: 2500, // Slide transition duration
     slidesToShow: 3,
     adaptiveHeight: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000, // Minimum delay between slides
     cssEase: "linear", // Smooth easing (no acceleration)
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   // doctor slider
   $(".doctor-slider").slick({
@@ -31,13 +45,13 @@ jQuery(document).ready(function ($) {
     cssEase: "linear", // Smooth easing (no acceleration)
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 850,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
         },
@@ -57,13 +71,13 @@ jQuery(document).ready(function ($) {
     cssEase: "linear", // Smooth easing (no acceleration)
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 850,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
         },
@@ -83,13 +97,13 @@ jQuery(document).ready(function ($) {
     cssEase: "linear", // Smooth easing (no acceleration)
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 850,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
         },
@@ -109,13 +123,13 @@ jQuery(document).ready(function ($) {
     cssEase: "linear", // Smooth easing (no acceleration)
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 850,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
         },

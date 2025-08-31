@@ -590,6 +590,7 @@ a.nav-link.dropdown-toggle i {
 .doctor-card {
   position: relative;
   padding: 36px;
+  padding-top: 0;
   padding-bottom: 42px;
   border-bottom: 6px solid #691fd6;
   border-radius: 0 0 40px 40px;
