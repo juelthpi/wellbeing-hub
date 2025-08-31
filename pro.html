@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Circular Progress</title>
+    <style>
+        :root {
+            --doctors: 85;
+            --communication: 60;
+        }
+
+        .circle {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .circle-doctor {
+            background: conic-gradient(#691FD6 calc(var(--doctors) * 1%), #D9DDE4 0);
+        }
+
+        .circle-communication {
+            background: conic-gradient(#691FD6 calc(var(--communication) * 1%), #D9DDE4 0);
+        }
+
+        .circle::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .percentage {
+            position: absolute;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            z-index: 2;
+        }
+
+        /* Rounded arc ends using pseudo-elements */
+        .circle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #691FD6;
+            z-index: 99;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="circle circle-doctor">
+            <div class="percentage">85%</div>
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="circle circle-communication">
+            <div class="percentage">60%</div>
+        </div>
+    </div>
+</body>
+
+</html>

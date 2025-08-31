@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --doctors: 85;
+  --communication: 60;
+}
 body {
   margin: 0;
   padding: 0;
@@ -152,13 +156,18 @@ h6 {
   font-weight: 700;
   line-height: 40px;
 }
+.section-title-lg {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 50px;
+}
 .common-heading-section h3 {
   font-size: 58px;
   line-height: 65px;
 }
 .common-heading-section h4 {
   font-size: 36px;
-  line-height: 48px;
+  line-height: 40px;
 }
 .common-heading-section h5 {
   font-size: 24px;
@@ -657,6 +666,9 @@ a.nav-link.dropdown-toggle i {
 .section-padding {
   padding: 95px 0;
 }
+.section-padding-bottom {
+  padding-bottom: 95px;
+}
 .section-margin {
   margin-top: 95px;
 }
@@ -845,12 +857,15 @@ a.nav-link.dropdown-toggle i {
 .text-justify {
   text-align: justify;
 }
-.mission-list ul {
+.list-design ul {
   list-style: disc;
   display: flex;
   flex-direction: column;
   gap: 8px;
   padding-left: 30px;
+}
+.mision-text-box {
+  margin-top: 80px;
 }
 .mission-vission-thumbnails img {
   border-radius: 20px;
@@ -862,8 +877,159 @@ a.nav-link.dropdown-toggle i {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 260px;
-  height: 160px;
+  width: 70%;
+  height: 290px;
   background-color: #e6f4fe;
-  border-radius: 20px;
+  border-radius: 20px 0 0px 0px;
+}
+
+.top-bottom-shape-box:before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  left: -24px;
+  bottom: 0px;
+  aspect-ratio: 1;
+  background: radial-gradient(circle 24px at top left, transparent 98%, #e6f4fe)
+    top left;
+}
+.top-bottom-shape-box:after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  right: 0px;
+  aspect-ratio: 1;
+  top: -24px;
+  background: radial-gradient(circle 24px at top left, transparent 98%, #e6f4fe)
+    top left;
+}
+.vision-text-box {
+  bottom: 46px;
+  position: absolute;
+  right: 0;
+  max-width: 1120px;
+  width: 100%;
+  padding: 48px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-color: white;
+}
+/* progress bar start */
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle-doctor {
+  background: conic-gradient(#691fd6 calc(var(--doctors) * 1%), #d9dde4 0);
+}
+.circle-communication {
+  background: conic-gradient(
+    #691fd6 calc(var(--communication) * 1%),
+    #d9dde4 0
+  );
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+.percentage {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  z-index: 2;
+}
+/* Rounded arc ends using pseudo-elements */
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #691fd6;
+  z-index: 99;
+  top: 0;
+}
+/* progress bar end */
+.progress-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 268px;
+  height: 246px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+.patients-say-card {
+  padding: 24px 24px 0px 24px;
+  background-color: #e6f4fe;
+  border-radius: 24px;
+}
+.qutation-icon {
+  height: 40px;
+  width: 40px;
+}
+.g-3 {
+  gap: 3px;
+}
+.g-8 {
+  gap: 8px;
+}
+.patients-say-rating-box ul {
+  border-radius: 48px;
+  background: #691fd6;
+  padding: 6px 12px;
+  padding-top: 2px;
+}
+.patients-say-body {
+  margin-top: 13px;
+  margin-bottom: 34px;
+}
+.patients-say-body p {
+  font-size: 16px;
+}
+.patients-say-info span {
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 3px;
+}
+.patients-say-info {
+  padding: 25px 22px;
+  border-radius: 24px 24px 0 0;
+  background: #07d8ff;
+}
+.patients-say-info-box {
+  gap: 24px;
+}
+.patients-say-info-img {
+  position: relative;
+  width: 120px;
+  height: 98px;
+  border-radius: 110px 110px 0 0;
+  border: 1px solid #07d8ff;
+}
+.patients-say-info-img img {
+  border-radius: 110px 110px 0 0;
+  width: 100%;
+  position: absolute;
+  left: 12px;
+  bottom: -1px;
 }

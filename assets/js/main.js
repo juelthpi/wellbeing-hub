@@ -136,6 +136,32 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+  // patients-say-slider
+  $(".patients-say-slider").slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    autoplay: false,
+    autoplaySpeed: 1,
+    cssEase: "linear", // Smooth easing (no acceleration)
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });
 
 // slider height
