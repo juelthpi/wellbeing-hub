@@ -1153,3 +1153,39 @@ select {
   background: url("../images/bg/appointment-bg.png");
   background-size: cover;
 }
+.blog-content {
+  position: absolute;
+  bottom: 24px;
+  left: 0px;
+  z-index: 1;
+  right: 0;
+  margin: 0 auto;
+  width: 92%;
+}
+.blog-card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(42, 40, 47, 0) 19.9%, #2a282f 100%);
+}
+.blog-card img {
+  border-radius: 24px;
+}
+.blog-auth-info h5 {
+  color: #f8fafc;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.blog-auth-info p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  letter-spacing: -0.56px;
+}
