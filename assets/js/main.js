@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 2500, // Slide transition duration
+    speed: 1000, // Slide transition duration
     slidesToShow: 3,
     adaptiveHeight: true,
     autoplay: false,
@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 3000, // Slide transition duration
+    speed: 1000, // Slide transition duration
     slidesToShow: 3,
     adaptiveHeight: true,
     autoplay: false,
@@ -63,7 +63,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 3000,
+    speed: 1000,
     slidesToShow: 3,
     adaptiveHeight: true,
     autoplay: false,
@@ -89,7 +89,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 3000,
+    speed: 1000,
     slidesToShow: 3,
     adaptiveHeight: true,
     autoplay: false,
@@ -115,7 +115,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 3000,
+    speed: 1000,
     slidesToShow: 3,
     adaptiveHeight: true,
     autoplay: false,
@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 3000,
+    speed: 1000,
     slidesToShow: 3,
     adaptiveHeight: true,
     autoplay: false,

@@ -15,6 +15,7 @@ body {
 .container-fluid {
   max-width: 1680px;
   width: 100%;
+  margin: 0 auto;
 }
 button {
   background-color: transparent;
