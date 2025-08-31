@@ -157,7 +157,7 @@ h6 {
   line-height: 65px;
 }
 .common-heading-section h4 {
-  font-size: 38px;
+  font-size: 36px;
   line-height: 48px;
 }
 .common-heading-section h5 {
@@ -273,6 +273,8 @@ a.nav-link.dropdown-toggle i {
 
 .header-area {
   padding-top: 24px;
+}
+.bg-f6 {
   background-color: #f6f6f6;
 }
 .hero-section {
@@ -813,4 +815,55 @@ a.nav-link.dropdown-toggle i {
 .dropdown-menu[data-bs-popper] {
   left: inherit;
   right: 0;
+}
+.breadcrumb-box {
+  background-image: url("../images/bg/breadcrumb.png");
+  background-size: 100% 100%;
+  border-radius: 24px;
+}
+.breadcrumb-section {
+  margin-top: 24px;
+}
+.bredadcrumb-list {
+  gap: 2px;
+}
+.bredadcrumb-list li,
+.bredadcrumb-list li a {
+  color: #111827;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.bredadcrumb-list li a:hover {
+  color: #681fd6a4;
+}
+.breadcrumb-box h3 {
+  color: #000;
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 12px;
+}
+.text-justify {
+  text-align: justify;
+}
+.mission-list ul {
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 30px;
+}
+.mission-vission-thumbnails img {
+  border-radius: 20px;
+}
+.top-bottom-shape-box-container {
+  position: relative;
+}
+.top-bottom-shape-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 260px;
+  height: 160px;
+  background-color: #e6f4fe;
+  border-radius: 20px;
 }

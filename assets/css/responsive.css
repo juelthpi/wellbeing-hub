@@ -55,6 +55,11 @@
     font-size: 16px;
     border-radius: 8px;
   }
+  .breadcrumb-box h3 {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 8px;
+  }
 }
 @media screen and (max-width: 1199px) {
   #navbarText {
@@ -152,8 +157,25 @@
   .footer-section {
     padding: 80px 0;
   }
+  .bredadcrumb-list li,
+  .bredadcrumb-list li a {
+    font-size: 16px;
+  }
+  .common-heading-section h4 {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 @media screen and (max-width: 767px) {
+  .breadcrumb-box h3 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 8px;
+  }
+  .after-before-shape:after,
+  .after-before-shape:before {
+    opacity: 0;
+  }
   .invert-border-shape {
     height: 90px;
     width: 90px;
