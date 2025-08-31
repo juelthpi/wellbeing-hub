@@ -457,9 +457,7 @@ a.nav-link.dropdown-toggle i {
   margin-top: 24px;
   line-height: 26px;
 }
-.service-area {
-  margin-top: 60px;
-}
+
 .slick-dots li button {
   background-color: #9ca3af;
   height: 8px;
@@ -658,9 +656,7 @@ a.nav-link.dropdown-toggle i {
   position: relative;
   z-index: 3;
 }
-.doctor-section {
-  background-color: #e6f4fe;
-}
+
 .doctor-slider-area {
   display: flex;
   gap: 72px;
@@ -1033,4 +1029,98 @@ a.nav-link.dropdown-toggle i {
   position: absolute;
   left: 12px;
   bottom: -1px;
+}
+
+.filter-item select,
+.filter-item input {
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 10px 12px;
+  padding-right: 35px;
+  border-bottom: 2.5px solid #07d8ff;
+  background: #e6f4fe;
+  font-size: 20px;
+  color: #111827;
+  cursor: pointer;
+}
+input[type="date"] {
+  padding-right: 12px;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+select {
+  appearance: none; /* For modern browsers */
+  -webkit-appearance: none; /* For Safari/Chrome */
+  -moz-appearance: none; /* For Firefox */
+}
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  transform: translateY(-50%);
+  right: 14px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #e6f4fe;
+  padding: 10px 14px;
+  border-radius: 12px;
+  width: 420px;
+  border-radius: 12px;
+  border: 1px solid #d9dde4;
+}
+
+.search-box svg {
+  flex-shrink: 0;
+  margin-right: 8px;
+  color: #38bdf8;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.search-box input::placeholder {
+  color: #6b7280;
+}
+.tag-btn {
+  padding: 4px 12px;
+  font-size: 16px;
+  color: #f8fafc;
+  gap: 6px;
+  border-radius: 12px;
+  display: flex;
+
+  background: #691fd6;
+}
+.selected-view {
+  margin-top: 12px;
+}
+.selected-view li p {
+  font-size: 20px;
+}
+.filter-area-cover {
+  margin-top: 48px;
+}
+.select-box-area {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card-bg {
+  background: url("../images/bg/bg-1.png");
+  background-size: 100% 100%;
+  padding: 140px 40px;
 }

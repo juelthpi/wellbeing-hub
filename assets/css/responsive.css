@@ -152,6 +152,12 @@
   .patients-say-info-box {
     gap: 10px;
   }
+  .filter-item select,
+  .filter-item input {
+    padding: 8px 10px;
+    font-size: 15px;
+    padding-right: 35px;
+  }
 }
 @media screen and (max-width: 991px) {
   p {
@@ -236,6 +242,12 @@
   .after-before-shape:before {
     opacity: 0;
   }
+  .after-before-shape-visible:after,
+  .after-before-shape-visible:before {
+    opacity: 1;
+    bottom: -8.2px;
+  }
+
   .invert-border-shape {
     height: 90px;
     width: 90px;
@@ -283,6 +295,18 @@
   .footer-section {
     padding-bottom: 30px;
   }
+  .tag-btn {
+    padding: 2px 6px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+  }
+  .search-box {
+    width: 320px;
+  }
+  .select-box-area {
+    gap: 4px;
+  }
 }
 @media screen and (max-width: 480px) {
   .nav-item a {
@@ -301,5 +325,20 @@
   .footer-bottom {
     padding-top: 30px;
     margin-top: 20px;
+  }
+  .g-20 {
+    gap: 12px;
+  }
+  .filter-item,
+  .filter-item select,
+  .filter-item input {
+    width: 100%;
+  }
+  .filter-item input {
+    padding-right: 12px;
+  }
+  .search-box {
+    width: 280px;
+    padding: 8px 14px;
   }
 }
