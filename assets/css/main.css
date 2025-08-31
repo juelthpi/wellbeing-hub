@@ -1124,3 +1124,32 @@ select {
   background-size: 100% 100%;
   padding: 140px 40px;
 }
+.input-item input,
+.input-item select,
+.input-item textarea {
+  border: none;
+  outline: none;
+  padding: 14px 18px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 12px;
+  border: 1.5px solid #d9dde4;
+  background: #fff;
+  font-size: 20px;
+  color: #6b7280;
+}
+.input-item textarea {
+  min-height: 160px;
+}
+.input-item input:focus,
+.input-item select:focus,
+.input-item textarea:focus {
+  border-color: #07d8ff;
+  background: #e0f2fe;
+  cursor: pointer;
+  color: #111827;
+}
+.appointment-section {
+  background: url("../images/bg/appointment-bg.png");
+  background-size: cover;
+}

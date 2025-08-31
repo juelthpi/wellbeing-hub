@@ -307,6 +307,13 @@
   .select-box-area {
     gap: 4px;
   }
+  .input-item input,
+  .input-item select,
+  .input-item textarea {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 480px) {
   .nav-item a {
