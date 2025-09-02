@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellbeing - Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div id="status">
+        <img src="assets/images/favicon.png" alt="logo" />
+      </div>
+    </div>
+    <!-- Header Start-->
+    <main class="registration-body">
+      <div class="container extra-container">
+        <div class="registration-card">
+          <div class="header-registration">
+            <div class="text-center ragistration-logo">
+              <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+            </div>
+            <nav>
+              <ul class="d-flex justify-content-center align-items-center registration-menu flex-wrap">
+                <li><a href="user-registration.html">User Registration</a></li>
+                <li><a class="active" href="doctor-registration.html">Doctor Registration</a></li>
+                <li><a href="agent-registration.html">Agent Registration</a></li>
+                <li><a href="hospital-registration.html">Hospital Registration</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="registration-section">
+            <div class="registration-form">
+              <div class="row g-4">
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item position-relative">
+                    <label for="name">
+                      Name
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="nema" placeholder="Enter your name" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item position-relative">
+                    <label for="qualification">
+                      Degree/Qualification
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="qualification" placeholder="Enter Degree/Qualification" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="specialization">
+                      Specialization
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="selected-item position-relative">
+                      <select id="specialization">
+                        <option value="computerScience">Computer Science</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="default" selected>Select Speciality</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item position-relative">
+                    <label for="hospitalName">
+                      Hospital Name
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="hospitalName" placeholder="Enter Hospital Name" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item position-relative">
+                    <label for="medicalCollage">
+                      Medical College Name
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="medicalCollage" placeholder="Enter Hospital Name" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item position-relative">
+                    <label for="totalExperience">
+                      Total Experience
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="totalExperience" placeholder="Enter Hospital Name" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="country">Country</label>
+                    <div class="selected-item position-relative">
+                      <select id="country">
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="srilanka">Sri Lanka</option>
+                        <option value="default" selected>Choose one</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="language">
+                      Language
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="language" placeholder="Enter Language" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="city">
+                      District/City
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="city" placeholder="Enter District/City" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="city">
+                      Consultancy Fees
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="city" placeholder="Enter Consultancy Fees" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="email">
+                      Email
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="email" id="email" placeholder="Enter Email" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="password">
+                      Password
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="position-relative">
+                      <input type="password" id="password" placeholder="Enter Password" />
+                      <span class="input-item-icon">
+                        <img src="assets/images/icon/lock.png" alt="icon" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="email">
+                      Phone Number
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="email" id="email" placeholder="Enter Phone Number" />
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="gender">
+                      Gender
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="selected-item position-relative">
+                      <select id="gender">
+                        <option value="default" selected>Choose Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item">
+                    <label for="doctorType">
+                      Doctor Type
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="selected-item position-relative">
+                      <select id="doctorType">
+                        <option value="default" selected>Choose Doctor Type</option>
+                        <option value="GeneralPhysician">General Physician</option>
+                        <option value="Cardiologist">Cardiologist</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-6">
+                  <div class="input-item position-relative">
+                    <label for="chooseFile">
+                      NID/Passport
+                      <span class="text-danger">(.png,.jpeg,.webp,.jpg)</span>
+                    </label>
+                    <div class="file-wrapper">
+                      <input type="file" id="chooseFile" class="file-input" />
+                      <label for="chooseFile" class="file-label">
+                        <span id="fileName">Choose file</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- single item End -->
+                <!-- single item start -->
+                <div class="col-md-12">
+                  <div class="input-item">
+                    <label for="bmdc">
+                      BMDC Registration Number
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="bmdc" placeholder="Enter BMDC Registration Number" />
+                  </div>
+                </div>
+                <!-- single item End -->
+
+                <div class="col-md-12">
+                  <div class="d-flex justify-content-center mt-4">
+                    <button class="primary-btn" type="submit">
+                      Submit
+                      <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.79626 13.28L13.5013 8.9333C14.175 8.41997 14.175 7.57997 13.5013 7.06664L7.79626 2.71997"
+                          stroke="#F8FAFC"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Start Service Section -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+      $(window).on("load", function () {
+        $("#preloader").fadeOut();
+        $("#preloader").delay(500).fadeOut("slow");
+        $("body").delay(500).css({opacity: 1});
+      });
+      flatpickr("#dateOfBirth", {
+        dateFormat: "Y-m-d",
+        allowInput: true,
+      });
+
+      const fileInput = document.getElementById("chooseFile");
+      const fileName = document.getElementById("fileName");
+
+      fileInput.addEventListener("change", function () {
+        if (this.files.length > 0) {
+          fileName.textContent = this.files[0].name;
+          fileName.style.color = "#000"; // black after selection
+        } else {
+          fileName.textContent = "Choose file";
+          fileName.style.color = "#6b7280"; // gray placeholder
+        }
+      });
+    </script>
+  </body>
+</html>
