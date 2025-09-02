@@ -3,6 +3,10 @@
   --doctors: 85;
   --communication: 60;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +21,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 button {
   background-color: transparent;
   outline: none;
@@ -58,6 +63,11 @@ p {
 .container {
   max-width: 1388px;
   width: 98%;
+}
+.extra-container {
+  max-width: 931px;
+  width: 100%;
+  margin: 0 auto;
 }
 input {
   outline: none;
@@ -421,11 +431,7 @@ a.nav-link.dropdown-toggle i {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.8) 75%
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 75%);
   border-radius: 24px;
 }
 .service-card-icon {
@@ -535,8 +541,7 @@ a.nav-link.dropdown-toggle i {
   left: -24px;
   aspect-ratio: 1;
   top: 0;
-  background: radial-gradient(circle 24px at bottom left, transparent 98%, #fff)
-    top left;
+  background: radial-gradient(circle 24px at bottom left, transparent 98%, #fff) top left;
 }
 .invert-border-shape:before {
   position: absolute;
@@ -545,8 +550,7 @@ a.nav-link.dropdown-toggle i {
   right: 0px;
   bottom: -24px;
   aspect-ratio: 1;
-  background: radial-gradient(circle 24px at bottom left, transparent 98%, #fff)
-    top left;
+  background: radial-gradient(circle 24px at bottom left, transparent 98%, #fff) top left;
 }
 
 /* doctor section */
@@ -558,11 +562,7 @@ a.nav-link.dropdown-toggle i {
   border-radius: 50%;
   padding: 4px;
 
-  background: conic-gradient(
-    from -20deg,
-    #00d4ff 0deg 220deg,
-    transparent 220deg 360deg
-  );
+  background: conic-gradient(from -20deg, #00d4ff 0deg 220deg, transparent 220deg 360deg);
 }
 .doctor-profile {
   margin: 0 auto;
@@ -745,11 +745,7 @@ a.nav-link.dropdown-toggle i {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.9) 75%
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 75%);
   border-radius: 24px;
 }
 .bg-E6 {
@@ -888,8 +884,7 @@ a.nav-link.dropdown-toggle i {
   left: -24px;
   bottom: 0px;
   aspect-ratio: 1;
-  background: radial-gradient(circle 24px at top left, transparent 98%, #e6f4fe)
-    top left;
+  background: radial-gradient(circle 24px at top left, transparent 98%, #e6f4fe) top left;
 }
 .top-bottom-shape-box:after {
   position: absolute;
@@ -898,8 +893,7 @@ a.nav-link.dropdown-toggle i {
   right: 0px;
   aspect-ratio: 1;
   top: -24px;
-  background: radial-gradient(circle 24px at top left, transparent 98%, #e6f4fe)
-    top left;
+  background: radial-gradient(circle 24px at top left, transparent 98%, #e6f4fe) top left;
 }
 .vision-text-box {
   bottom: 46px;
@@ -933,10 +927,7 @@ a.nav-link.dropdown-toggle i {
   background: conic-gradient(#691fd6 calc(var(--doctors) * 1%), #d9dde4 0);
 }
 .circle-communication {
-  background: conic-gradient(
-    #691fd6 calc(var(--communication) * 1%),
-    #d9dde4 0
-  );
+  background: conic-gradient(#691fd6 calc(var(--communication) * 1%), #d9dde4 0);
 }
 .circle::before {
   content: "";
@@ -1313,4 +1304,135 @@ select {
 .remeber {
   white-space: nowrap;
   margin-left: 30px;
+}
+
+/* ==============  Registration Start  ===============  */
+
+.registration-body {
+  background: url("../images/bg.png") no-repeat scroll center center / cover;
+  padding: 48px 0;
+}
+.registration-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+}
+.ragistration-logo a img {
+  max-width: 260px;
+  width: 100%;
+}
+
+.registration-menu {
+  padding: 48px 0;
+}
+.registration-menu li a {
+  padding: 9px 16px;
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 12px;
+  color: #000000;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: poppins;
+  border-bottom: 3.5px solid transparent;
+  transition: 0.5s;
+}
+.registration-menu li a.active {
+  background-color: #e0f2fe;
+  border-bottom: 3.5px solid #07d8ff;
+}
+
+/* common input item  */
+.input-item label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 6px;
+  color: #000000;
+  display: block;
+}
+
+/* input datepicket  */
+.date-wrapper {
+  position: relative;
+  width: 100%;
+}
+.date-wrapper input {
+  width: 100%;
+  padding-right: 35px;
+}
+.date-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 54%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/angle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.selected-item select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.selected-item::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 54%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/angle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+
+/* file upload  */
+ .file-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.file-input {
+  display: none;
+}
+.file-label {
+    display: block;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 17px 18px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6b7280;
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.file-label::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 51%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/icon/export.png'); /* apnar icon image path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.input-item .text-danger{
+  color: #854D0E !important;
 }

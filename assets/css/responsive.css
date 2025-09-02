@@ -315,6 +315,17 @@
     border-radius: 8px;
     font-size: 16px;
   }
+  .input-item label{
+    font-size: 18px;
+  }
+  .file-label {
+    padding: 11px 18px;
+    height: 50px;
+    font-size: 16pz;
+  }
+  .file-label span {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 480px) {
   .nav-item a {
